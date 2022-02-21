@@ -34,6 +34,7 @@ public:
     QString category;
     int duration{0}; // milliseconds
     int minimumCooldown{0}; // milliseconds
+	QString oscValue;
     int group{0}; // A super-category grouping (no two commands should both be available, if they have the same group and belong to the same device)
 
     bool isRunning{false};

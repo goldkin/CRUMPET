@@ -20,15 +20,17 @@
 #include "BTDeviceCommandModel.h"
 #include "BTDeviceModel.h"
 #include "BTDevice.h"
+#include "OSCClient.h"
 
 #include <QTimer>
 
 class CommandQueue::Private
 {
 public:
-    Private(CommandQueue* qq, BTConnectionManager* connectionManager)
+    Private(CommandQueue* qq, BTConnectionManager* connectionManager, OSCClient* oscClient)
         : q(qq)
         , connectionManager(connectionManager)
+		, oscClient(oscClient)
     {
         currentCommandTimer = new QTimer(qq);
         currentCommandTimer->setSingleShot(true);
@@ -50,9 +52,11 @@ public:
         ~Entry() { }
         CommandInfo command;
         QStringList deviceIDs;
+		OSCIpList ipList;
     };
     QVector<Entry*> commands;
     BTConnectionManager* connectionManager;
+	OSCClient* oscClient;
 
     QTimer* popTimer;
     QTimer* currentCommandTimer;
@@ -68,6 +72,7 @@ public:
             // though not yet, but just never send an empty command)
             if(!entry->command.command.isEmpty()) {
                 connectionManager->sendMessage(entry->command.command, entry->deviceIDs);
+				oscClient->sendMessage(entry->command.oscValue, entry->ipList);
                 currentCommandTimer->setInterval(entry->command.duration + entry->command.minimumCooldown);
                 currentCommandTimer->start();
                 currentCommandTimerChecker->start();

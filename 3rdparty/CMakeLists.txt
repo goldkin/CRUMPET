@@ -4,3 +4,4 @@ option(BUILD_TESTING "Build tests for ki18n" OFF)
 
 add_subdirectory(kirigami)
 add_subdirectory(ki18n)
+add_subdirectory(tinyosc)

@@ -36,6 +36,7 @@ public:
         Category,
         Duration,
         MinimumCooldown,
+		OscValue,
         CommandIndex,
         IsAvailable
     };

@@ -26,6 +26,7 @@ CommandInfo::CommandInfo(const CommandInfo& other)
     , category(other.category)
     , duration(other.duration)
     , minimumCooldown(other.minimumCooldown)
+    , oscValue(other.oscValue)
     , group(other.group)
     , isRunning(other.isRunning)
     , isAvailable(other.isAvailable)
@@ -37,6 +38,7 @@ CommandInfo::CommandInfo(CommandInfo && other) noexcept
     , category(std::move(other.category))
     , duration(std::move(other.duration))
     , minimumCooldown(std::move(other.minimumCooldown))
+    , oscValue(other.oscValue)
     , group(std::move(other.group))
     , isRunning(std::move(other.isRunning))
     , isAvailable(std::move(other.isAvailable))
@@ -50,6 +52,7 @@ CommandInfo& CommandInfo::operator=(CommandInfo && other) noexcept
     category = std::move(other.category);
     duration = std::move(other.duration);
     minimumCooldown = std::move(other.minimumCooldown);
+    oscValue = std::move(other.oscValue);
     group = std::move(other.group);
     isRunning = std::move(other.isRunning);
     isAvailable = std::move(other.isAvailable);
@@ -63,6 +66,7 @@ CommandInfo& CommandInfo::operator=(const CommandInfo& other)
     category = other.category;
     duration = other.duration;
     minimumCooldown = other.minimumCooldown;
+    oscValue = other.oscValue;
     group = other.group;
     isRunning = other.isRunning;
     isAvailable = other.isAvailable;
@@ -79,6 +83,7 @@ void CommandInfo::clear()
     category.clear();
     duration = 0;
     minimumCooldown = 0;
+    oscValue.clear();
     group = 0;
     isRunning = false;
     isAvailable = true;
@@ -93,13 +98,14 @@ bool CommandInfo::compare(const CommandInfo& other) const
         category == other.category &&
         duration == other.duration &&
         minimumCooldown == other.minimumCooldown &&
+        oscValue == other.oscValue &&
         group == other.group
     );
 }
 
 bool CommandInfo::isValid() const
 {
-    if (name.isEmpty() || command.isEmpty() || category.isEmpty() || duration < 1) {
+    if (name.isEmpty() || command.isEmpty() || category.isEmpty() || duration < 1 || oscValue.isEmpty()) {
         return false;
     }
     return true;

@@ -9,3 +9,6 @@
 [submodule "3rdparty/ki18n"]
 	path = 3rdparty/ki18n
 	url = https://invent.kde.org/frameworks/ki18n.git
+[submodule "3rdparty/tinyosc"]
+	path = 3rdparty/tinyosc
+	url = https://github.com/mhroth/tinyosc.git

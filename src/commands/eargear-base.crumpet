@@ -8,6 +8,7 @@
             "Duration": 200,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 0,
             "Name": "Tail Home Position"
         },
         {
@@ -16,6 +17,7 @@
             "Duration": 11530,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 1,
             "Name": "One"
         },
         {
@@ -24,6 +26,7 @@
             "Duration": 7100,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 2,
             "Name": "Two"
         },
         {
@@ -32,6 +35,7 @@
             "Duration": 8500,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 3,
             "Name": "Three"
         },
         {
@@ -40,6 +44,7 @@
             "Duration": 9960,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 4,
             "Name": "Fast Wag"
         },
         {
@@ -48,6 +53,7 @@
             "Duration": 7460,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 5,
             "Name": "Short Wag"
         },
         {
@@ -56,6 +62,7 @@
             "Duration": 8860,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 6,
             "Name": "Happy Wag"
         },
         {
@@ -64,6 +71,7 @@
             "Duration": 5800,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 7,
             "Name": "Stand up!"
         },
         {
@@ -72,6 +80,7 @@
             "Duration": 4060,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 8,
             "Name": "Tremble 1"
         },
         {
@@ -80,6 +89,7 @@
             "Duration": 5550,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 9,
             "Name": "Tremble 2"
         },
         {
@@ -88,6 +98,7 @@
             "Duration": 4730,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 10,
             "Name": "Tremble Erect"
         },
         {
@@ -96,6 +107,7 @@
             "Duration": 9760,
             "Group": 0,
             "MinimumCooldown": 1000,
+            "OSCValue": 11,
             "Name": "High Wag"
         },
         {
@@ -104,6 +116,7 @@
             "Duration": 2000,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 64,
             "Name": "Hewo (left)"
         },
         {
@@ -112,6 +125,7 @@
             "Duration": 2000,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 65,
             "Name": "Hewo (right)"
         },
         {
@@ -120,6 +134,7 @@
             "Duration": 2000,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 66,
             "Name": "Hewo (Both)"
         },
         {
@@ -128,6 +143,7 @@
             "Duration": 500,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 67,
             "Name": "Confused"
         },
         {
@@ -136,6 +152,7 @@
             "Duration": 1500,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 68,
             "Name": "ZigZag (Left)"
         },
         {
@@ -144,6 +161,7 @@
             "Duration": 1500,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 69,
             "Name": "ZigZag (Right)"
         },
         {
@@ -152,6 +170,7 @@
             "Duration": 500,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 70,
             "Name": "Eltwisto"
         },
         {
@@ -160,6 +179,7 @@
             "Duration": 500,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 71,
             "Name": "Ritwisto"
         },
         {
@@ -168,6 +188,7 @@
             "Duration": 500,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 72,
             "Name": "R Flopper"
         },
         {
@@ -176,6 +197,7 @@
             "Duration": 500,
             "Group": 0,
             "MinimumCooldown": 500,
+            "OSCValue": 73,
             "Name": "L Flopper"
         }
     ],
